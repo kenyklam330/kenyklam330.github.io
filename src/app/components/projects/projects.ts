@@ -29,7 +29,7 @@ export class Projects {
       description: 'This is a career portfolio website built with Angular. It is a responsive website that displays my skills and experience.',
       thumbnail: 'project2.jpg',
       link: 'https://kenyklam330.github.io/',
-      repo: 'https://github.com/kenyklam330/career-portfolio',
+      repo: 'https://github.com/kenyklam330/kenyklam330.github.io',
     },
   ];
 }
