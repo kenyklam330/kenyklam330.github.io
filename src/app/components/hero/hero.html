@@ -1,0 +1,20 @@
+<section id="hero" class="hero">
+  <div class="hero-content">
+    @if (photoUrl) {
+      <img [src]="photoUrl" alt="" class="hero-photo" />
+    }
+    <div class="hero-text">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">{{ name }}</h1>
+    <p class="hero-tagline">Software Developer · Problem Solver · Lifelong Learner</p>
+    <p class="hero-bio">
+      I build web applications and love turning ideas into clean, maintainable code.
+      Open to new opportunities and collaborations.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary" (click)="scrollToContact($event)">Get in touch</a>
+      <a href="#projects" class="btn btn-secondary" (click)="scrollToProjects($event)">View projects</a>
+    </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+<header class="header">
+  <a href="#" class="logo" (click)="scrollTo('hero'); $event.preventDefault()">{{ logoText }}</a>
+  <nav class="nav">
+    <a href="#about" (click)="scrollTo('about'); $event.preventDefault()">About</a>
+    <a href="#experience" (click)="scrollTo('experience'); $event.preventDefault()">Experience</a>
+    <a href="#projects" (click)="scrollTo('projects'); $event.preventDefault()">Projects</a>
+    <a href="#skills" (click)="scrollTo('skills'); $event.preventDefault()">Skills</a>
+    <a href="#contact" (click)="scrollTo('contact'); $event.preventDefault()">Contact</a>
+  </nav>
+  <button class="menu-btn" type="button" aria-label="Toggle menu" (click)="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+</header>
+<nav class="nav-mobile" [class.open]="menuOpen()">
+  <a href="#about" (click)="scrollTo('about'); closeMenu()">About</a>
+  <a href="#experience" (click)="scrollTo('experience'); closeMenu()">Experience</a>
+  <a href="#projects" (click)="scrollTo('projects'); closeMenu()">Projects</a>
+  <a href="#skills" (click)="scrollTo('skills'); closeMenu()">Skills</a>
+  <a href="#contact" (click)="scrollTo('contact'); closeMenu()">Contact</a>
+</nav>

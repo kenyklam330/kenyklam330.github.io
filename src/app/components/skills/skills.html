@@ -1,0 +1,16 @@
+<section id="skills" class="section skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    @for (group of skillGroups; track group.category) {
+      <div class="skill-group">
+        <h3 class="skill-category">{{ group.category }}</h3>
+        <ul class="skill-list">
+          @for (skill of group.items; track skill) {
+            <li>{{ skill }}</li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+  <p class="hint">Edit <code>skills.ts</code> to list your technologies.</p>
+</section>

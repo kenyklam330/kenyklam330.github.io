@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+.about-content {
+  max-width: 65ch;
+
+  p {
+    margin: 0 0 1rem;
+    color: var(--color-section-text);
+    opacity: 0.9;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

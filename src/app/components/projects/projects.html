@@ -1,0 +1,27 @@
+<section id="projects" class="section section-light projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="project-grid">
+    @for (project of projects; track project.title) {
+      <article class="project-card">
+        @if (project.thumbnail) {
+          <div class="project-thumb-wrap">
+            <img [src]="project.thumbnail" [alt]="project.title" class="project-thumb" />
+          </div>
+        }
+        <div class="project-body">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-desc">{{ project.description }}</p>
+        <div class="project-links">
+          @if (project.link) {
+            <a [href]="project.link" target="_blank" rel="noopener noreferrer">Live</a>
+          }
+          @if (project.repo) {
+            <a [href]="project.repo" target="_blank" rel="noopener noreferrer">Code</a>
+          }
+        </div>
+        </div>
+      </article>
+    }
+  </div>
+  <p class="hint">Add your projects in <code>projects.ts</code>.</p>
+</section>

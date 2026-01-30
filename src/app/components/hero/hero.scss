@@ -1,0 +1,115 @@
+:host {
+  display: block;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--header-height, 64px) + 3rem) 1.5rem 3rem;
+  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 100%);
+}
+
+.hero-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+.hero-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(56, 189, 248, 0.4);
+  flex-shrink: 0;
+
+  @media (min-width: 640px) {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-greeting {
+  color: var(--color-accent);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.hero-name {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+  color: var(--color-text);
+}
+
+.hero-tagline {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  margin: 0 0 1.25rem;
+}
+
+.hero-bio {
+  max-width: 36ch;
+  color: var(--color-text-muted);
+  margin: 0 0 2rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+
+  &.btn-primary {
+    background: var(--color-accent);
+    color: var(--color-bg);
+  }
+
+  &.btn-primary:hover {
+    background: var(--color-accent-hover);
+    color: var(--color-bg);
+  }
+
+  &.btn-secondary {
+    background: transparent;
+    color: var(--color-text-muted);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+  }
+
+  &.btn-secondary:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+}

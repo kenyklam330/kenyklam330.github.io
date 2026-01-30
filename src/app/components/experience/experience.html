@@ -1,0 +1,18 @@
+<section id="experience" class="section experience">
+  <h2 class="section-title">Experience</h2>
+  <div class="timeline">
+    @for (job of jobs; track job.title) {
+      <article class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-period">{{ job.period }}</span>
+          <span class="timeline-company">{{ job.company }}</span>
+        </div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">{{ job.title }}</h3>
+          <p class="timeline-desc">{{ job.description }}</p>
+        </div>
+      </article>
+    }
+  </div>
+  <p class="hint">Replace the list above with your real roles in <code>experience.ts</code>.</p>
+</section>
