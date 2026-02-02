@@ -19,17 +19,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Angular app
-        run: |
-          npm run build -- --configuration production
+      - name: Build Angular
+        run: npx ng build --configuration production
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/kenyklam330
+          publish_dir: ./dist/career-portfolio/browser
