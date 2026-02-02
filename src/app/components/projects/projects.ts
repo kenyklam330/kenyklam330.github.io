@@ -18,6 +18,13 @@ export interface Project {
 export class Projects {
   protected projects: Project[] = [
     {
+      title: 'AeroView: London',
+      description: 'AeroView: London is a web-based flight simulator by Ken Lam. Using the Google Maps API, players pilot an A380 over a 3D vector or satellite map of London. Control speed and direction with your keyboard, manage fuel, and enjoy the aerial views from a custom UI panel.',
+      thumbnail: 'project3.jpg',
+      link: 'https://kenyklam330.github.io/aero-view-london',
+      repo: 'https://github.com/kenyklam330/aero-view-london',
+    },        
+    {
       title: 'Python AI RAG Agent Demo',
       description: 'This is a Retrieval-Augmented Generation (RAG) application demo built to assist retail specialists in navigating complex product catalogs. It allows users to upload technical PDFs and receive accurate, context-aware answers.',
       thumbnail: 'project1.jpg',
@@ -28,7 +35,7 @@ export class Projects {
       title: 'Career Portfolio Website',
       description: 'This is a career portfolio website built with Angular. It is a responsive website that displays my skills and experience.',
       thumbnail: 'project2.jpg',
-      link: 'https://kenyklam330.github.io/',
+      link: 'https://kenyklam330.github.io',
       repo: 'https://github.com/kenyklam330/kenyklam330.github.io',
     },
   ];
