@@ -18,6 +18,12 @@ export interface Project {
 export class Projects {
   protected projects: Project[] = [
     {
+      title: 'AI Product Attribute Extractor',
+      description: 'This AI Product Attribute Extractor transforms messy product descriptions into structured JSON using FastAPI and React. It features a dual-provider system (Azure OpenAI & Ollama), allowing electrical retailer to balance high-performance cloud reasoning with cost-effective local processing. Built with Docker and Pydantic, it ensures scalable, validated data for enterprise-grade retail catalogs.',
+      thumbnail: 'project4.jpg',
+      repo: 'https://github.com/kenyklam330/ai-product-attribute-extractor',
+    },      
+    {
       title: 'AeroView: London',
       description: 'AeroView: London is a web-based flight simulator by Ken Lam. Using the Google Maps API, players pilot an A380 over a 3D vector or satellite map of London. Control speed and direction with your keyboard, manage fuel, and enjoy the aerial views from a custom UI panel.',
       thumbnail: 'project3.jpg',
