@@ -18,6 +18,12 @@ export interface Project {
 export class Projects {
   protected projects: Project[] = [
     {
+      title: 'Life in the UK Test PERN App by Ken Lam',
+      description: 'A full-stack PERN application for studying the Life in the UK test. Features include Google OAuth authentication, chapter-based study materials, mock tests with scoring, progress tracking, and a user dashboard. Built with React (Vite), Node.js/Express, PostgreSQL, and Passport.js for secure Google OAuth login.',
+      thumbnail: 'project5.jpg',
+      repo: 'https://github.com/kenyklam330/life-in-the-uk-test-pern-app',
+    },          
+    {
       title: 'AI Product Attribute Extractor',
       description: 'This AI Product Attribute Extractor transforms messy product descriptions into structured JSON using FastAPI and React. It features a dual-provider system (Azure OpenAI & Ollama), allowing electrical retailer to balance high-performance cloud reasoning with cost-effective local processing. Built with Docker and Pydantic, it ensures scalable, validated data for enterprise-grade retail catalogs.',
       thumbnail: 'project4.jpg',
