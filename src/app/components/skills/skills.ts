@@ -15,15 +15,15 @@ export class Skills {
   protected skillGroups: SkillGroup[] = [
     {
       category: 'Frontend',
-      items: ['C# / ASP.NET', 'Angular', 'React', 'TypeScript', 'jQuery', 'JavaScript', 'HTML/CSS'],
+      items: ['Vue 3', 'React', 'Angular', 'TypeScript', 'ASP.NET', 'jQuery', 'JavaScript', 'HTML/CSS'],
     },
     {
       category: 'Backend',
-      items: ['.NET Core', 'Node.js', 'Python', 'REST APIs', 'GraphQL', 'Microsoft SQL Server', 'PostgreSQL', 'MongoDB'],
+      items: ['Node.js', 'C# / .NET Core', 'Python', 'REST APIs', 'Microsoft SQL Server', 'PostgreSQL', 'MongoDB'],
     },
     {
       category: 'Tools',
-      items: ['GitHub', 'Visual Studio Code', 'Codex', 'Cursor', 'Claude Code', 'Databricks', 'Azure Al services', 'AWS AI services'],
+      items: ['GitHub', 'Visual Studio Code', 'Visual Studio', 'Databricks', 'Azure', 'AWS', 'Docker', 'Codex', 'Cursor', 'Claude Code'],
     },
   ];
 }
